@@ -55,6 +55,8 @@ app.use('/public', express.static(publicDir));
 
 // Custom image route to return JSON if missing
 app.get('/images/:filename', (req, res) => {
+  // Enable CORS for images (cross-origin frontend)
+  res.set('Access-Control-Allow-Origin', '*');
   const filePath = path.join(publicDir, 'images', req.params.filename);
   res.sendFile(filePath, (err) => {
     if (err) {
