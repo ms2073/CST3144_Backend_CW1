@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: lesson-booking-backend
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: MONGODB_URI
+        sync: false
+      - key: DB_NAME
+        value: lesson_booking
+      - key: CORS_ORIGINS
+        sync: false
+

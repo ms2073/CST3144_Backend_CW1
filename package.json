@@ -1,0 +1,24 @@
+{
+  "name": "lesson-booking-backend",
+  "version": "1.0.0",
+  "description": "Express.js backend for Vue.js lesson booking app (MongoDB native driver)",
+  "main": "src/app.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "node src/app.js",
+    "start": "NODE_ENV=production node src/app.js",
+    "seed": "node src/seed/seed.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "mongodb": "^6.9.0",
+    "morgan": "^1.10.0"
+  }
+}
