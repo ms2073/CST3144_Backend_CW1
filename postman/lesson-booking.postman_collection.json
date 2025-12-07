@@ -8,14 +8,14 @@
       "name": "Get Lessons",
       "request": {
         "method": "GET",
-        "url": {{baseUrl}}"/lessons"
+        "url": "{{baseUrl}}/lessons"
       }
     },
     {
       "name": "Search Lessons",
       "request": {
         "method": "GET",
-        "url": {{baseUrl}}"/lessons/search?q=math"
+        "url": "{{baseUrl}}/lessons/search?q=math"
       }
     },
     {
@@ -23,7 +23,7 @@
       "request": {
         "method": "PUT",
         "header": [ { "key": "Content-Type", "value": "application/json" } ],
-        "url": {{baseUrl}}"/lessons/:id",
+        "url": "{{baseUrl}}/lessons/:id",
         "body": {
           "mode": "raw",
           "raw": "{\n  \"spaces\": 9\n}"
@@ -35,7 +35,7 @@
       "request": {
         "method": "POST",
         "header": [ { "key": "Content-Type", "value": "application/json" } ],
-        "url": {{baseUrl}}"/orders",
+        "url": "{{baseUrl}}/orders",
         "body": {
           "mode": "raw",
           "raw": "{\n  \"name\": \"Alice\",\n  \"phone\": \"1234567890\",\n  \"lessonIDs\": [\"<lessonId>\"],\n  \"spaces\": 1\n}"
