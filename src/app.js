@@ -34,10 +34,10 @@ app.use(
   })
 );
 
-// Rate limiting (basic)
+// Rate limiting (generous for development/testing)
 const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000,
-  max: 300,
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 1000, // Increased from 300 to 1000 requests
   standardHeaders: true,
   legacyHeaders: false,
 });
