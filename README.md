@@ -2,6 +2,10 @@
 
 Secure, JSON-only REST API for a Vue.js lesson booking frontend.
 
+**Live Deployment:** https://cst3144-backend-cw1.onrender.com
+
+**Test Endpoint:** https://cst3144-backend-cw1.onrender.com/lessons
+
 ### Tech
 - Express.js
 - MongoDB Atlas (native `mongodb` driver, no ODM)
@@ -40,6 +44,9 @@ Seeds at least 10 lessons.
 Import `postman/lesson-booking.postman_collection.json`.
 
 ### Deployment (Render)
+**Deployed URL:** https://cst3144-backend-cw1.onrender.com
+
+Setup steps:
 1. Create a new Web Service, connect GitHub repo
 2. Build command: `npm install`
 3. Start command: `npm start`
