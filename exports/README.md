@@ -24,3 +24,16 @@ This folder contains exported MongoDB collections from MongoDB Compass.
 - `orders.json` - Export of all order documents
 
 These exports are required for the coursework submission.
+
+## Verification
+
+After exporting, verify your files contain:
+- **lessons.json**: At least 10 lesson documents with fields: `_id`, `subject`, `location`, `price`, `spaces`
+- **orders.json**: All submitted orders with fields: `_id`, `name`, `phone`, `lessonIDs`, `spaces`, `createdAt`
+
+## Coursework Submission
+
+These JSON exports must be included in your final submission zip file along with:
+- Source code
+- README with GitHub and deployment links
+- Postman collection exports
