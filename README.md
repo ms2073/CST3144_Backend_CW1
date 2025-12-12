@@ -1,4 +1,4 @@
-## Lesson Booking Backend (Express + MongoDB Native Driver)
+## Lesson Booking Backend (Express + MongoDB )
 
 Secure, JSON-only REST API for a Vue.js lesson booking frontend.
 
